@@ -1,120 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WealthBoard — Portfolio Tracker</title>
-<meta name="description" content="WealthBoard is a personal investment portfolio tracker for iOS and Android.">
-<style>
-  :root {
-    --bg: #f6f7f9;
-    --surface: #ffffff;
-    --on-surface: #16202b;
-    --on-surface-variant: #5a6672;
-    --accent: #1f6f6b;
-    --border: #e2e6ea;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0d1520;
-      --surface: #141f2c;
-      --on-surface: #e8edf2;
-      --on-surface-variant: #9aa7b4;
-      --accent: #5fbdb6;
-      --border: #24323f;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0d1520;
-    --surface: #141f2c;
-    --on-surface: #e8edf2;
-    --on-surface-variant: #9aa7b4;
-    --accent: #5fbdb6;
-    --border: #24323f;
-  }
-
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--on-surface);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
-  header {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 28px 24px;
-    margin-bottom: 28px;
-  }
-  h1 { margin: 0 0 6px; font-size: 26px; line-height: 1.25; }
-  .meta { color: var(--on-surface-variant); font-size: 14px; margin: 0; }
-  .meta + .meta { margin-top: 2px; }
-  main {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 8px 24px 28px;
-  }
-  h2 {
-    color: var(--accent);
-    font-size: 16px;
-    font-weight: 600;
-    margin: 28px 0 8px;
-  }
-  p { margin: 0 0 14px; }
-  ul { margin: 0 0 14px; padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .label { font-weight: 600; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
-  nav.links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-  nav.links a { font-size: 14px; }
-  footer {
-    margin-top: 28px;
-    color: var(--on-surface-variant);
-    font-size: 13px;
-    text-align: center;
-  }
-  @media (max-width: 520px) {
-    .wrap { padding: 24px 16px 48px; }
-    header, main { padding-left: 18px; padding-right: 18px; }
-    h1 { font-size: 22px; }
-  }
-</style>
+<title>WealthBoard — Personal Investment Portfolio Tracker</title>
+<meta name="description" content="WealthBoard is a personal investment portfolio tracker for iOS and Android. Track holdings, dividends and performance — you enter it, we organize it.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <h1>WealthBoard</h1>
-    <p class="meta">A personal investment portfolio tracker for iOS and Android.</p>
-    <nav class="links"><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a><a href="mailto:tristandavid20@gmail.com">Support</a></nav>
-  </header>
+  <div class="topbar">
+    <a class="brand" href="/">
+      <span class="mark">💰</span> WealthBoard
+    </a>
+    <nav>
+      <a href="/#features">Features</a>
+      <a href="/#help">Support</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <span class="eyebrow">iOS &amp; Android</span>
+    <h1>Your portfolio, organized.</h1>
+    <p class="tagline">A personal investment portfolio tracker that consolidates your holdings, transactions and dividends — and compares them against live market data.</p>
+    <div class="store-badges">
+      <a class="store-badge" href="#">Download on the App Store</a>
+      <a class="store-badge secondary" href="#">Get it on Google Play</a>
+    </div>
+  </div>
 
   <main>
-    <h2>What it does</h2>
-    <p>WealthBoard keeps your holdings, transactions and dividends in one place and shows them against live market data &mdash; total value and day change, performance over any range, dividend income by month and by holding, allocation across accounts, and the tax treatment of each account.</p>
-    <p>Everything is entered by you. WealthBoard does not connect to your brokerage, cannot place trades, and is not investment advice.</p>
 
-    <h2>Support</h2>
-    <p>Questions, bug reports or feature requests: <a href="mailto:tristandavid20@gmail.com">tristandavid20@gmail.com</a>. You can also use &ldquo;Contact Support&rdquo; in the app&rsquo;s Menu, which reaches us directly. We aim to respond within 48 hours.</p>
+    <section id="features">
+      <h2 class="section-title">Everything in one place</h2>
+      <p class="section-sub">WealthBoard pulls your holdings, transactions and dividends together and lines them up against current market data.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Total portfolio valuation</h3>
+          <p>See what everything is worth right now, in one number, updated against live market data.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📈</div>
+          <h3>Daily &amp; period performance</h3>
+          <p>Track daily changes and returns across the timeframes you care about.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💵</div>
+          <h3>Monthly dividend tracking</h3>
+          <p>Forecasts are built from each holding's own payment history and cadence — not a generic estimate.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🥧</div>
+          <h3>Account allocation</h3>
+          <p>Break your portfolio down by account and see how it's really spread.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏷️</div>
+          <h3>Tax classification</h3>
+          <p>Keep tax-relevant details on your holdings organized alongside everything else.</p>
+        </div>
+        <div class="card">
+          <div class="icon">☁️</div>
+          <h3>Backup &amp; cloud sync</h3>
+          <p>Export a backup anytime, or sign in to sync automatically across your devices.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Legal</h2>
-    <ul>
-      <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="/terms.html">Terms of Use</a></li>
-    </ul>
+    <section>
+      <div class="notice">
+        Everything is entered by you. WealthBoard does not connect to your brokerage, cannot place trades, and is not investment advice.
+      </div>
+    </section>
 
-    <h2>Developer</h2>
-    <p>Tristan David &middot; Ontario, Canada</p>
+    <section id="help">
+      <div class="help-card">
+        <h2 style="margin-top:0;">Need help?</h2>
+        <p>For bugs, questions, feature requests, or anything else about WealthBoard on iOS or Android, email us directly — we aim to reply within 48 hours. You can also use the in-app "Contact Support" option from the Menu.</p>
+        <a class="email-button" href="mailto:tristandavid20@gmail.com?subject=WealthBoard%20Support">Email Support</a>
+        <p class="muted" style="margin-top:14px;">tristandavid20@gmail.com</p>
+      </div>
+
+      <h2 class="section-title" style="margin-top:40px;">Frequently asked questions</h2>
+
+      <details class="faq-item">
+        <summary>How do I back up or restore my portfolio?</summary>
+        <p>Open Menu → Backup &amp; Restore. You can export a backup file at any time, or sign in with Apple or Google to enable automatic cloud sync across your devices.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are my brokerage accounts connected automatically?</summary>
+        <p>No. WealthBoard is not a brokerage and does not connect to your bank or trading accounts. You add your holdings manually, and WealthBoard handles tracking, dividend forecasting, and reporting from there.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How does dividend forecasting work?</summary>
+        <p>Projected income is built from each holding's own payment history and cadence, not a generic estimate — so a fund's forecast reflects how that specific fund actually pays.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What does WealthBoard Premium include?</summary>
+        <p>Premium adds cloud backup and multi-device sync and PDF report generation. Everything else in the app is available on the free tier.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I cancel my subscription?</summary>
+        <p>Subscriptions are managed through your Apple ID or Google Play account settings, not inside the app. Cancelling stops the next renewal; Premium stays active until the end of the period you've already paid for.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I delete my account or data?</summary>
+        <p>Email support and we'll process the request. See our <a href="privacy-policy.html">Privacy Policy</a> for details on what's stored and how it's handled.</p>
+      </details>
+    </section>
+
   </main>
 
-  <footer>WealthBoard &middot; Tristan David</footer>
+  <footer>
+    <div class="links">
+      <a href="/">Home</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="mailto:tristandavid20@gmail.com">Contact</a>
+    </div>
+    © 2026 Tristan David. All rights reserved. · Ontario, Canada
+  </footer>
 
-</div>
 </body>
 </html>
