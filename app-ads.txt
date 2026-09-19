@@ -1,0 +1,15 @@
+# app-ads.txt for WealthBoard (wealthboardapp.com)
+# Spec: https://iabtechlab.com/ads-txt/
+#
+# WealthBoard currently has NO advertising partners, so no sellers are
+# authorized below. That is accurate today and is what the apps' privacy
+# policy says.
+#
+# BEFORE shipping any build that contains an ad SDK, replace this file with
+# the line your ad network gives you. For AppLovin it is found at
+# Account > General > App-ads.txt Info and looks like:
+#
+#   applovin.com, <your-publisher-id>, DIRECT
+#
+# An app-ads.txt that lists no sellers tells bidders that nobody may sell
+# this app's inventory — leaving it in place with ads live means no ads fill.
