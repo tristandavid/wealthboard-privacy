@@ -203,10 +203,30 @@ p.section-sub {
 
 /* Bug report / support form */
 .support-form {
-  margin-top: 18px;
+  margin-top: 22px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
+}
+.support-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.support-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 520px) {
+  .support-form .form-row { grid-template-columns: 1fr; }
+}
+.support-form label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.01em;
 }
 .support-form input,
 .support-form textarea {
@@ -220,13 +240,22 @@ p.section-sub {
   font-family: inherit;
   resize: vertical;
 }
-.support-form textarea { min-height: 130px; }
+.support-form textarea { min-height: 150px; }
 .support-form input::placeholder,
-.support-form textarea::placeholder { color: var(--muted); }
+.support-form textarea::placeholder { color: var(--muted); opacity: 0.7; }
 .support-form input:focus,
 .support-form textarea:focus {
   outline: none;
   border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(221, 193, 120, 0.15);
+}
+.support-form .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
 }
 .support-form button {
   border: none;
@@ -235,18 +264,23 @@ p.section-sub {
   color: #1a1400;
   font-weight: 700;
   font-size: 0.98rem;
-  padding: 13px 22px;
+  padding: 13px 28px;
   border-radius: 999px;
   font-family: inherit;
+  white-space: nowrap;
 }
+.support-form button:hover:not(:disabled) { background: var(--gold-dim); }
 .support-form button:disabled {
   opacity: 0.6;
   cursor: default;
 }
 .form-status {
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   color: var(--muted);
   margin: 0;
+  text-align: left;
+  flex: 1;
+  min-width: 200px;
 }
 .form-status.success { color: var(--green); }
 .form-status.error { color: #e57373; }

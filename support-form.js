@@ -12,19 +12,16 @@ import {
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
-// Same Firebase project as the app (wealthboard-18bfb / GoogleService-Info.plist).
-// TODO: replace appId with the Web app's own App ID — Firebase console →
-// Project settings → Your apps → Add app → Web (</>) → register
-// "WealthBoard Website" → copy the config it gives you and paste the whole
-// object here. The apiKey/projectId below are already correct; only appId
-// is a placeholder borrowed from the iOS app.
+// Same Firebase project as the app (wealthboard-18bfb), using the dedicated
+// Web app registered in Firebase console → Project settings → Your apps.
 const firebaseConfig = {
-  apiKey: "AIzaSyA7LUy_VCBsGBCRvVe8rCrmq2pWKTKmPT8",
+  apiKey: "AIzaSyB8yprg7F7APxfVp2oUSVmCHOwlt5CYwv8",
   authDomain: "wealthboard-18bfb.firebaseapp.com",
   projectId: "wealthboard-18bfb",
   storageBucket: "wealthboard-18bfb.firebasestorage.app",
   messagingSenderId: "336382017055",
-  appId: "1:336382017055:web:419cad4f21c430c4ee1f2a"
+  appId: "1:336382017055:web:419cad4f21c430c4ee1f2a",
+  measurementId: "G-7STBBXQSC2"
 };
 
 const app = initializeApp(firebaseConfig);

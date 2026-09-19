@@ -83,11 +83,24 @@
         <p>Describe the issue you're experiencing. We'll review your report and get back to you — or use the in-app "Contact Support" option from the Menu.</p>
 
         <form id="support-form" class="support-form">
-          <input type="email" name="email" placeholder="Your email (for our reply)" required>
-          <input type="text" name="subject" placeholder="Subject" required>
-          <textarea name="message" placeholder="Description" required></textarea>
-          <button type="submit">Submit Report</button>
-          <p class="form-status" id="support-form-status">Your report will be reviewed by the WealthBoard team. Thank you for helping us improve the app.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="support-email">Your email</label>
+              <input id="support-email" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field">
+              <label for="support-subject">Subject</label>
+              <input id="support-subject" type="text" name="subject" placeholder="What's this about?" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="support-message">Description</label>
+            <textarea id="support-message" name="message" placeholder="Describe the issue or question in as much detail as you can." required></textarea>
+          </div>
+          <div class="form-footer">
+            <p class="form-status" id="support-form-status">We aim to reply within 48 hours.</p>
+            <button type="submit">Submit Report</button>
+          </div>
         </form>
       </div>
 
