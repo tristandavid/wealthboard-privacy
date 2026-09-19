@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
 <title>WealthBoard Support</title>
 <meta name="description" content="Get help with WealthBoard — contact support or browse frequently asked questions.">
 <link rel="stylesheet" href="style.css">
@@ -11,7 +12,7 @@
 
   <div class="topbar">
     <a class="brand" href="/">
-      <span class="mark">💰</span> WealthBoard
+      <img class="mark" src="logo.png" alt="WealthBoard logo"> WealthBoard: Dividend Tracker
     </a>
     <nav>
       <a href="/#features">Features</a>
@@ -27,12 +28,20 @@
       <p class="section-sub" style="margin-top:0;">Get help with WealthBoard on iOS or Android.</p>
 
       <div class="help-card">
-        <h2 style="margin-top:0;">Need help?</h2>
-        <p>For bugs, questions, feature requests, or anything else about WealthBoard, email us directly — we aim to reply within 48 hours. You can also use the in-app "Contact Support" option from the Menu.</p>
-        <a class="email-button" href="mailto:tristandavid20@gmail.com?subject=WealthBoard%20Support">Email Support</a>
-        <p class="muted" style="margin-top:14px;">tristandavid20@gmail.com</p>
+        <h2 style="margin-top:0;">Report a Bug or Contact Support</h2>
+        <p>Describe the issue you're experiencing. We'll review your report and get back to you — or use the in-app "Contact Support" option from the Menu.</p>
+
+        <form id="support-form" class="support-form">
+          <input type="email" name="email" placeholder="Your email (for our reply)" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Description" required></textarea>
+          <button type="submit">Submit Report</button>
+          <p class="form-status" id="support-form-status">Your report will be reviewed by the WealthBoard team. Thank you for helping us improve the app.</p>
+        </form>
       </div>
     </section>
+
+    <script type="module" src="support-form.js"></script>
 
     <section>
       <h2 class="section-title" style="text-align:left;">Frequently asked questions</h2>
@@ -74,7 +83,7 @@
       <a href="/">Home</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
-      <a href="mailto:tristandavid20@gmail.com">Contact</a>
+      <a href="support.html">Contact</a>
     </div>
     © 2026 Tristan David. All rights reserved. · Ontario, Canada
   </footer>

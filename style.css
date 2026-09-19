@@ -46,11 +46,8 @@ a { color: var(--gold); }
   width: 30px;
   height: 30px;
   border-radius: 8px;
-  background: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
+  display: block;
+  object-fit: cover;
 }
 .topbar nav {
   display: flex;
@@ -203,6 +200,56 @@ p.section-sub {
   border-radius: 999px;
 }
 .muted { color: var(--muted); font-size: 0.92rem; }
+
+/* Bug report / support form */
+.support-form {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.support-form input,
+.support-form textarea {
+  width: 100%;
+  background: var(--card-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 14px;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+}
+.support-form textarea { min-height: 130px; }
+.support-form input::placeholder,
+.support-form textarea::placeholder { color: var(--muted); }
+.support-form input:focus,
+.support-form textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.support-form button {
+  border: none;
+  cursor: pointer;
+  background: var(--gold);
+  color: #1a1400;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-family: inherit;
+}
+.support-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.form-status {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0;
+}
+.form-status.success { color: var(--green); }
+.form-status.error { color: #e57373; }
 
 .faq-item {
   margin-bottom: 14px;
