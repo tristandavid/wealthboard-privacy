@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="favicon.png">
 <title>WealthBoard — Personal Investment Portfolio Tracker</title>
-<meta name="description" content="WealthBoard is a personal investment portfolio tracker for iOS and Android. Track holdings, dividends and performance — you enter it, we organize it.">
+<meta name="description" content="WealthBoard is a dividend and portfolio tracker for iPhone, Android and the web. Track holdings, dividend income, pay dates and performance across all your accounts.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,6 +16,7 @@
     </a>
     <nav>
       <a href="/#features">Features</a>
+      <a href="/#plans">Plans</a>
       <a href="/#help">Support</a>
       <a href="privacy-policy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -23,9 +24,9 @@
   </div>
 
   <div class="hero">
-    <span class="eyebrow">iOS &amp; Android</span>
+    <span class="eyebrow">iOS, Android &amp; Web</span>
     <h1>Your portfolio, organized.</h1>
-    <p class="tagline">A personal investment portfolio tracker that consolidates your holdings, transactions and dividends — and compares them against live market data.</p>
+    <p class="tagline">A dividend and portfolio tracker that brings every account together: what you own, what it earns, and when you get paid.</p>
     <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;margin-top:18px"><span style="display:inline-flex;align-items:center;height:48px;padding:0 16px;border-radius:10px;border:1px solid currentColor;opacity:.7;font-size:14px;font-weight:600">App Store: coming soon</span><a href="https://play.google.com/store/apps/details?id=ca.tristan.portfolio" target="_blank" rel="noopener" style="line-height:0"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="height:69px;width:auto;display:block;margin:-10px -11px"></a></div>
   </div>
 
@@ -33,39 +34,59 @@
 
     <section id="features">
       <h2 class="section-title">Everything in one place</h2>
-      <p class="section-sub">WealthBoard pulls your holdings, transactions and dividends together and lines them up against current market data.</p>
+      <p class="section-sub">WealthBoard brings your holdings, transactions and dividends from every account together and lines them up against current market data.</p>
       <div class="grid">
-        <div class="card">
-          <div class="icon">📊</div>
-          <h3>Total portfolio valuation</h3>
-          <p>See what everything is worth right now, in one number, updated against live market data.</p>
+        <div class="card"><div class="icon">📊</div><h3>Portfolio value &amp; performance</h3><p>Total value, daily change and returns over any period, with year-by-year results and charts for every holding.</p></div>
+        <div class="card"><div class="icon">📅</div><h3>Dividend calendar</h3><p>Upcoming payments laid out by pay date, including dividends a company has already announced.</p></div>
+        <div class="card"><div class="icon">💵</div><h3>Income forecast with DRIP</h3><p>Projected income for this year and the years ahead, built from each holding's own payment history, with optional dividend reinvestment.</p></div>
+        <div class="card"><div class="icon">🏦</div><h3>Income by account</h3><p>See what each account earns, before and after tax, across TFSA, RRSP, IRA, taxable and other account types.</p></div>
+        <div class="card"><div class="icon">📈</div><h3>Dividend raises &amp; cuts</h3><p>Spot which holdings raised or cut their payout, with dividend history and historical yield charts.</p></div>
+        <div class="card"><div class="icon">⚖️</div><h3>Rebalancing planner</h3><p>Set target weights and see what to buy or trim to get back on plan.</p></div>
+        <div class="card"><div class="icon">🎯</div><h3>Benchmark &amp; risk</h3><p>Compare your returns with a market index and check volatility, Sharpe ratio and maximum drawdown.</p></div>
+        <div class="card"><div class="icon">📥</div><h3>Import from your broker</h3><p>Bring in trades and dividends from broker CSV exports (Wealthsimple, Questrade, Interactive Brokers, Fidelity, Schwab, Vanguard and more). No broker login needed.</p></div>
+        <div class="card"><div class="icon">🔔</div><h3>Price &amp; ex-dividend alerts</h3><p>Get notified when a price crosses your target or an ex-dividend date is coming up.</p></div>
+        <div class="card"><div class="icon">📰</div><h3>Market &amp; dividend news</h3><p>Market and dividend headlines in one place, each with a photo.</p></div>
+        <div class="card"><div class="icon">🧾</div><h3>Reports &amp; tax summaries</h3><p>Export PDF and CSV reports and transaction history, with dividend and tax summaries for each account.</p></div>
+        <div class="card"><div class="icon">🔒</div><h3>Private by design</h3><p>Your portfolio stays on your device behind an optional app lock. Backups and cloud sync are optional.</p></div>
+      </div>
+    </section>
+
+    <section id="plans">
+      <h2 class="section-title">Plans</h2>
+      <p class="section-sub">Start free. Upgrade when you want every tool, no ads, or the web app.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="plan-note">Every screen and holding</p>
+          <ul>
+            <li>Portfolio, dividends, calendar and news</li>
+            <li>Up to 2 accounts</li>
+            <li>Unlock all analysis for 30 minutes with one short, optional ad</li>
+          </ul>
         </div>
-        <div class="card">
-          <div class="icon">📈</div>
-          <h3>Daily &amp; period performance</h3>
-          <p>Track daily changes and returns across the timeframes you care about.</p>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p class="plan-note">Phone apps, monthly or yearly</p>
+          <ul>
+            <li>Every analysis card, no ads</li>
+            <li>Price &amp; ex-dividend alerts</li>
+            <li>Broker import, PDF &amp; CSV exports</li>
+            <li>Cloud backup &amp; sync, unlimited accounts</li>
+          </ul>
         </div>
-        <div class="card">
-          <div class="icon">💵</div>
-          <h3>Monthly dividend tracking</h3>
-          <p>Forecasts are built from each holding's own payment history and cadence — not a generic estimate.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🥧</div>
-          <h3>Account allocation</h3>
-          <p>Break your portfolio down by account and see how it's really spread.</p>
-        </div>
-        <div class="card">
-          <div class="icon">🏷️</div>
-          <h3>Tax classification</h3>
-          <p>Keep tax-relevant details on your holdings organized alongside everything else.</p>
-        </div>
-        <div class="card">
-          <div class="icon">☁️</div>
-          <h3>Backup &amp; cloud sync</h3>
-          <p>Export a backup anytime, or sign in to sync automatically across your devices.</p>
+        <div class="plan featured">
+          <span class="plan-tag">New</span>
+          <h3>Premium + Web</h3>
+          <p class="plan-note">Phone apps and the web app</p>
+          <ul>
+            <li>Everything in Premium</li>
+            <li>WealthBoard on the web at app.wealthboardapp.com</li>
+            <li>Same account, synced with your phone</li>
+            <li>Yearly plan starts with a 7-day free trial</li>
+          </ul>
         </div>
       </div>
+      <p class="plan-foot">Prices are shown in the app in your local currency. Premium + Web is available on Android now and is coming to iPhone.</p>
     </section>
 
     <section>
@@ -110,7 +131,7 @@
 
       <details class="faq-item">
         <summary>Are my brokerage accounts connected automatically?</summary>
-        <p>No. WealthBoard is not a brokerage and does not connect to your bank or trading accounts. You add your holdings manually, and WealthBoard handles tracking, dividend forecasting, and reporting from there.</p>
+        <p>No. WealthBoard is not a brokerage and does not connect to your bank or trading accounts. You add holdings yourself or import the CSV files your broker lets you download, and WealthBoard handles tracking, dividend forecasting and reporting from there.</p>
       </details>
 
       <details class="faq-item">
@@ -121,6 +142,11 @@
       <details class="faq-item">
         <summary>What does WealthBoard Premium include?</summary>
         <p>Premium unlocks every analysis card (rebalancing planner, multi-year income forecast, dividend raises and cuts, historical yield, benchmark comparison and risk metrics), price and ex-dividend alerts, cloud backup and multi-device sync, PDF and CSV exports, and unlimited accounts. Free users can unlock all of the analysis for 30 minutes by watching a short, optional ad. Premium has no ads.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I use WealthBoard on the web?</summary>
+        <p>Subscribe to Premium + Web in the app while signed in (Menu → Sign In / Register). Then go to app.wealthboardapp.com and sign in with the same account, using email and password, Google, or Apple. Your portfolio syncs over automatically. Existing Premium subscribers can switch to Premium + Web from the Premium screen, and the unused part of their current plan is credited.</p>
       </details>
 
       <details class="faq-item">

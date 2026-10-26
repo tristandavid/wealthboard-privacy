@@ -51,7 +51,8 @@ a { color: var(--gold); }
 }
 .topbar nav {
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 8px 22px;
   font-size: 0.92rem;
 }
 .topbar nav a {
@@ -180,6 +181,37 @@ p.section-sub {
   font-size: 0.92rem;
   text-align: center;
 }
+
+/* Plans */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+.plan {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+}
+.plan.featured { border: 2px solid var(--gold); }
+.plan h3 { margin: 0; font-size: 1.15rem; }
+.plan-note { margin: 2px 0 12px; color: var(--muted); font-size: 0.88rem; }
+.plan ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 0.92rem; }
+.plan li { margin-bottom: 6px; }
+.plan-tag {
+  position: absolute;
+  top: -11px;
+  right: 16px;
+  background: var(--gold);
+  color: #1a1400;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.plan-foot { color: var(--muted); font-size: 0.84rem; text-align: center; margin: 16px 0 0; }
 
 /* Need help block (shared with in-app style) */
 .help-card {
